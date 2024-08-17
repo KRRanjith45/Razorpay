@@ -66,9 +66,15 @@ class _HomeState extends State<Home> {
         title: Text('Razorpay Demo'),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: _openCheckout,
-          child: Text('Pay with Razorpay'),
+        child: Column(
+          children: [
+            Text("Pay with razorpay"),
+            Icon(Icons.access_time),
+            ElevatedButton(
+              onPressed: _openCheckout,
+              child: Text('Pay with Razorpay'),
+            ),
+          ],
         ),
       ),
     );
